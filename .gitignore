@@ -1,0 +1,10 @@
+###android###
+*.iml
+.gradle
+/local.properties
+Android/GoodBam/.idea
+.DS_Store
+Android/GoodBam/build
+Android/GoodBam/captures
+.externalNativeBuild
+.cxx
