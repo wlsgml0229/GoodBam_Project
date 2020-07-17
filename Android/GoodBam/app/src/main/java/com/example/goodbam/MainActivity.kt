@@ -20,11 +20,12 @@ class MainActivity : AppCompatActivity() {
 //        }
         val intent = Intent(this,LoginPageActivity::class.java)
 
-        Handler().postDelayed({
+        val handler = Handler()
+        handler.postDelayed({
             startActivity(intent)}
             , 3000L)
 
-        Handler().postDelayed({
+        handler.postDelayed({
             overridePendingTransition(R.anim.fadein,R.anim.fadeout)}
             , 3000L)
 

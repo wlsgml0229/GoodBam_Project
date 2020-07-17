@@ -7,6 +7,9 @@
     <color name="white">#FFFFFF</color>
     <color name="login2">#A8A8A8</color>
     <color name="login">#D7057AAF</color>
-    <color name="black">#070707</color>
-    <color name="sky">#F5F5F5</color>
+    <color name="black">#E42C2B2B</color>
+    <color name="sky">#1D70BA</color>
+    <color name="hint">#52575C</color>
+    <color name="button">#505050</color>
+
 </resources>

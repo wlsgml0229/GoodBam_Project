@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
@@ -7,11 +8,13 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="0.7"/>
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="10">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,37 +22,200 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="0.5"/>
 
             <ImageButton
-                android:id="@+id/back_button"
+                android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:layout_weight="1.5"
+                android:layout_weight="1.2"
+                android:src="@drawable/ic_back"
                 android:background="@color/white"
-                android:src="@drawable/ic_back" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"></LinearLayout>
-        </LinearLayout>
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"
+                            android:text="회원가입"
+                            android:textSize="22dp"
+                            android:textColor="@color/black"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:text="이름"
+                            android:textColor="@color/sky"
+                            android:textSize="18dp"
+                            />
+                        <EditText
+                            android:id="@+id/user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8"
+                            android:textSize="16dp"
+                            android:hint="이름을 적으세요"
+                            android:textColorHint="@color/hint"
+                            android:paddingLeft="10dp"
+                            android:backgroundTint="@color/sky"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:text="아이디"
+                            android:textColor="@color/sky"
+                            android:textSize="18dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:id="@+id/user_id"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="9"
+                                    android:inputType="textPersonName"
+                                    android:textSize="16dp"
+                                    android:hint="아이디를 적으세요"
+                                    android:textColorHint="@color/hint"
+                                    android:paddingLeft="10dp"
+                                    android:backgroundTint="@color/sky"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    />
+                                <Button
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:text="중복확인"
+                                    android:textColor="@color/button"
+                                    />
+                            </LinearLayout>
 
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:text="비밀번호"
+                            android:textColor="@color/sky"
+                            android:textSize="18dp"
+                            />
+                        <EditText
+                            android:id="@+id/user_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8"
+                            android:textSize="16dp"
+                            android:hint="6자이상 영문자,숫자를 조합해주세요"
+                            android:textColorHint="@color/hint"
+                            android:paddingLeft="10dp"
+                            android:backgroundTint="@color/sky"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:text="비밀번호 확인"
+                            android:textColor="@color/sky"
+                            android:textSize="18dp"
+                            />
+                        <EditText
+                            android:id="@+id/user_password2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8"
+                            android:textSize="16dp"
+                            android:hint="비밀번호를 입력해주세요"
+                            android:textColorHint="@color/hint"
+                            android:paddingLeft="10dp"
+                            android:backgroundTint="@color/sky"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"/>
+                                <Button
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="next"
+                                    android:textColor="@color/button"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.4"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1">
-
-    </LinearLayout>
+        android:layout_weight="1.5"/>
 
 </LinearLayout>
