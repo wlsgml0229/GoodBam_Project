@@ -11,5 +11,10 @@
     <color name="sky">#1D70BA</color>
     <color name="hint">#52575C</color>
     <color name="button">#505050</color>
+    <color name="orange">#FFBB56</color>
+    <color name="black2">#000000</color>
+    <color name="main_page">#DFDFE3FF</color>
+    <color name="setting_page">#CEF7E9F8</color>
+
 
 </resources>
