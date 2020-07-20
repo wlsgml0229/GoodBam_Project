@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    >
 
     <LinearLayout
         android:layout_width="0dp"
@@ -44,6 +44,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -51,15 +52,34 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="0.9"
-                            android:text="회원가입"
-                            android:textSize="22dp"
-                            android:textColor="@color/black"
-                            />
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.7"
+                                android:text="아이디 찾기"
+                                android:textSize="22dp"
+                                android:textColor="@color/black"
+                                />
+                            <Button
+                                android:id="@+id/psw_search_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="비밀번호 찾기"
+                                android:textSize="16dp"
+                                android:textColor="@color/orange"
+                                android:background="@color/white"
+                                style="?android:attr/borderlessButtonStyle"
+                                />
+                        </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
@@ -86,104 +106,31 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="0.6"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.6"
-                            android:text="아이디"
-                            android:textColor="@color/sky"
-                            android:textSize="18dp"
+                            android:layout_weight="0.7"
                             />
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.2"
-                            >
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-                                <EditText
-                                    android:id="@+id/user_id"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="9"
-                                    android:inputType="textPersonName"
-                                    android:textSize="16dp"
-                                    android:hint="아이디를 적으세요"
-                                    android:textColorHint="@color/hint"
-                                    android:paddingLeft="10dp"
-                                    android:backgroundTint="@color/sky"
-                                    />
-                                <LinearLayout
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="0.4"
-                                    />
-                                <Button
-                                    android:id="@+id/check_id_button"
-                                    android:layout_width="0dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="4"
-                                    android:text="중복확인"
-                                    android:textColor="@color/button"
-                                    />
-                            </LinearLayout>
+                        <Spinner
 
-                        </LinearLayout>
-                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="0.6"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.6"
-                            android:text="비밀번호"
-                            android:textColor="@color/sky"
-                            android:textSize="18dp"
+                            android:layout_weight="1"
+                            android:entries="@array/spinnerArray"
                             />
                         <EditText
-                            android:id="@+id/user_password"
+                            android:id="@+id/search_ans"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1.2"
                             android:textSize="16dp"
-                            android:hint="6자이상 영문자,숫자를 조합해주세요"
+                            android:hint="질문에 대한 답변을 적으세요"
                             android:textColorHint="@color/hint"
                             android:paddingLeft="10dp"
                             android:backgroundTint="@color/sky"
-                            android:inputType="textPassword"
                             />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="0.6"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.6"
-                            android:text="비밀번호 확인"
-                            android:textColor="@color/sky"
-                            android:textSize="18dp"
+                            android:layout_weight="0.5"
                             />
-                        <EditText
-                            android:id="@+id/user_password2"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.2"
-                            android:textSize="16dp"
-                            android:hint="비밀번호를 입력해주세요"
-                            android:textColorHint="@color/hint"
-                            android:paddingLeft="10dp"
-                            android:backgroundTint="@color/sky"
-                            android:inputType="textPassword"
-                            />
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.6"/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
@@ -198,11 +145,11 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="3"/>
                                 <Button
-                                    android:id="@+id/next_button"
+                                    android:id="@+id/id_search_button"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:text="next"
+                                    android:text="찾기"
                                     android:textColor="@color/button"
                                     />
                             </LinearLayout>
@@ -210,16 +157,15 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="1.4"/>
+                            android:layout_weight="4"
+                            />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1.5"/>
-
 </LinearLayout>
