@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    >
-
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -28,7 +27,7 @@
                 android:layout_weight="0.5"/>
 
             <ImageButton
-                android:id="@+id/back_button"
+                android:id="@+id/signup_btn_back"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1.2"
@@ -45,7 +44,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
-
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -53,113 +51,143 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
+                        android:orientation="vertical">
 
-                        >
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:layout_weight="0.9"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1.7"
-                                android:text="비밀번호 찾기"
-                                android:textSize="22dp"
-                                android:textColor="@color/black"
-                                />
-                            <Button
-                                android:id="@+id/id_search_button"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="아이디 찾기"
-                                android:textSize="16dp"
-                                android:textColor="@color/orange"
-                                android:background="@color/white"
-                                style="?android:attr/borderlessButtonStyle"
-                                />
-                        </LinearLayout>
+                            android:text="@string/Signup_main"
+                            android:textColor="@color/black"
+                            android:textSize="22dp" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="0.5"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.6"
-                            android:text="이름"
-                            android:textColor="@color/sky"
-                            android:textSize="18dp"
-                            />
-                        <EditText
-                            android:id="@+id/user_name"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.2"
-                            android:textSize="16dp"
-                            android:hint="이름을 적으세요"
-                            android:textColorHint="@color/hint"
-                            android:paddingLeft="10dp"
-                            android:backgroundTint="@color/sky"
-                            />
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.9"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.6"
-                            android:text="아이디"
-                            android:textColor="@color/sky"
-                            android:textSize="18dp"
-                            />
-                        <EditText
-                            android:id="@+id/user_id"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.2"
-                            android:textSize="16dp"
-                            android:hint="아이디를 적으세요"
-                            android:textColorHint="@color/hint"
-                            android:paddingLeft="10dp"
-                            android:backgroundTint="@color/sky"
-                            />
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.9"
-                            />
-                        <Spinner
 
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:entries="@array/spinnerArray"
-                            />
+                            android:layout_weight="0.6"
+                            android:text="@string/Signup_name"
+                            android:textColor="@color/sky"
+                            android:textSize="18dp" />
+
                         <EditText
-                            android:id="@+id/search_ans"
+                            android:id="@+id/signup_et_name"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1.2"
-                            android:textSize="16dp"
-                            android:hint="질문에 대한 답변을 적으세요"
-                            android:textColorHint="@color/hint"
-                            android:paddingLeft="10dp"
                             android:backgroundTint="@color/sky"
-                            />
+                            android:hint="@string/Signup_name_hint"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="0.5"
-                            />
+                            android:layout_weight="0.6"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="@string/Signup_id"
+                            android:textColor="@color/sky"
+                            android:textSize="18dp" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="1"
+                            android:layout_weight="1.2"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/signup_et_id"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="9"
+                                    android:backgroundTint="@color/sky"
+                                    android:hint="@string/Signup_id_hint"
+                                    android:inputType="textPersonName"
+                                    android:paddingLeft="10dp"
+                                    android:textColorHint="@color/hint"
+                                    android:textSize="16dp" />
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    />
+
+                                <Button
+                                    android:id="@+id/signup_btn_idcheck"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:text="@string/Signup_id_check"
+                                    android:textColor="@color/button" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="@string/Signup_pass1"
+                            android:textColor="@color/sky"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/signup_et_pw1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:backgroundTint="@color/sky"
+                            android:hint="@string/Signup_pass1_hint"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="@string/Signup_pass2"
+                            android:textColor="@color/sky"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/signup_et_pw2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
+                            android:backgroundTint="@color/sky"
+                            android:hint="@string/Signup_pass2_hint"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/hint"
+                            android:textSize="16dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2"
                             >
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -169,26 +197,26 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="3"/>
+
                                 <Button
-                                    android:id="@+id/psw_search_button"
+                                    android:id="@+id/signup_btn_next"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
-                                    android:text="찾기"
-                                    android:textColor="@color/button"
-                                    />
+                                    android:text="@string/Signup_btn_next"
+                                    android:textColor="@color/button" />
                             </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="4"
-                            />
+                            android:layout_weight="0.7"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"

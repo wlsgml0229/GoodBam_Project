@@ -4,21 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.os.HandlerThread
-import kotlinx.android.synthetic.main.activity_start.*
 
-class MainActivity : AppCompatActivity() {
+class LogoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start)
+        setContentView(R.layout.activity_logo)
 
-//        button.setOnClickListener{
-//            val intent = Intent(this,LoginPageActivity::class.java)
-//            startActivity(intent)
-//            overridePendingTransition(R.anim.fadein,R.anim.fadeout)
-//        }
-        val intent = Intent(this,LoginPageActivity::class.java)
+        val intent = Intent(this,LoginActivity::class.java)
 
         val handler = Handler()
         handler.postDelayed({

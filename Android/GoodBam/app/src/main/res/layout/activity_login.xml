@@ -37,7 +37,7 @@
 <!--                    android:layout_weight="1"/>-->
 
                 <EditText
-                    android:id="@+id/userid"
+                    android:id="@+id/login_et_id"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="10"
@@ -45,8 +45,7 @@
                     android:drawableLeft="@drawable/id3"
                     android:drawablePadding="10dp"
 
-                    android:hint="userId"
-                    />
+                    android:hint="@string/Login_id" />
 <!--                <LinearLayout-->
 <!--                    android:layout_width="0dp"-->
 <!--                    android:layout_height="wrap_content"-->
@@ -60,18 +59,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1.1">
+
                 <EditText
-                    android:id="@+id/userpsw"
+                    android:id="@+id/login_et_pw"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="10"
                     android:background="@drawable/text_border"
                     android:drawableLeft="@drawable/psw3"
                     android:drawablePadding="10dp"
-                    android:hint="****"
+                    android:hint="@string/Login_pass"
 
-                    android:inputType="textPassword"
-                    />
+                    android:inputType="textPassword" />
             </LinearLayout>
 
             <LinearLayout
@@ -109,40 +108,43 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"/>
             </LinearLayout>
+
             <Button
-                android:id="@+id/login"
+                android:id="@+id/login_btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
                 android:background="@drawable/button_corner"
-                android:text="로그인"
+                android:text="@string/Login_sign_in"
                 android:textColor="@color/white"
                 android:textSize="22dp"
 
                 />
+
             <Button
-                android:id="@+id/password"
+                android:id="@+id/login_btn_signup"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="1"
-
                 android:layout_marginTop="10dp"
+
+                android:layout_weight="1"
                 android:background="@drawable/button_corner"
-                android:text="회원가입"
+                android:text="@string/Login_sign_up"
                 android:textColor="@color/white"
                 android:textSize="22dp"
 
                 />
+
             <Button
-                android:id="@+id/search"
+                android:id="@+id/login_btn_find"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="1"
-
                 android:layout_marginTop="10dp"
+
                 android:layout_marginBottom="40dp"
+                android:layout_weight="1"
                 android:background="@drawable/button_corner"
-                android:text="아이디/비밀번호 찾기"
+                android:text="@string/Login_find"
                 android:textColor="@color/white"
                 android:textSize="22dp"
 

@@ -23,7 +23,7 @@
                 android:layout_weight="0.5"/>
 
             <ImageButton
-                android:id="@+id/back_button"
+                android:id="@+id/email_send_btn_back"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1.2"
@@ -47,44 +47,44 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:layout_weight="1.4"
-                            android:text="이메일 인증"
-                            android:textSize="22dp"
+                            android:text="@string/Email_send_main"
                             android:textColor="@color/black"
-                            />
+                            android:textSize="22dp" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="2"
                             />
+
                         <EditText
-                            android:id="@+id/user_email"
+                            android:id="@+id/email_send_et_email"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="2"
-                            android:hint="ex) aaa@naver.com"
-                            android:textColorHint="@color/hint"
-                            android:paddingLeft="10dp"
                             android:backgroundTint="@color/sky"
-                            />
+                            android:hint="@string/Email_send_hint"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/hint" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
                             />
+
                         <Button
-                            android:id="@+id/email_button"
+                            android:id="@+id/email_send_btn_send"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="2"
-                            android:text="인증"
-                            android:textColor="@color/white"
-                            android:textSize="22dp"
                             android:background="@drawable/button_corner"
-                            />
+                            android:text="@string/Email_send_btn"
+                            android:textColor="@color/white"
+                            android:textSize="22dp" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
