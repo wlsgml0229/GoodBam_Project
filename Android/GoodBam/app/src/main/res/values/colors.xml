@@ -15,6 +15,10 @@
     <color name="black2">#000000</color>
     <color name="main_page">#DFDFE3FF</color>
     <color name="setting_page">#CEF7E9F8</color>
+    <color name="green">#CE447E13</color>
+    <color name="yellow">#CEFFF8D5</color>
+    <color name="pink">#FF79A6</color>
+    <color name="blue">#5F7AFF</color>
 
 
 </resources>
