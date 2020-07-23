@@ -56,6 +56,7 @@ li:hover{
           height:10%;
         }
 </style>
+
 </head>
 <body>
 	<!-- header -->
@@ -63,7 +64,7 @@ li:hover{
 	  <div class="container-fluid" id="head">
    		
         <div class="navbar-header">
-          <a href="index.jsp"><img src="images/logow.PNG" class="navbar-brand" style="width:150px; height: 60px;" ></a>
+          <a href="index.jsp"><img src="../../webapp/WEB-INF/images/logow.PNG" class="navbar-brand" style="width:150px; height: 60px;" ></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
