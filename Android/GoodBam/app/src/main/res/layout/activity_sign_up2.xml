@@ -127,7 +127,7 @@
                                     android:id="@+id/signup2_btn_signup"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="1"
+                                    android:layout_weight="1.5"
                                     android:text="@string/Signup2_finish"
                                     android:textColor="@color/button" />
                             </LinearLayout>

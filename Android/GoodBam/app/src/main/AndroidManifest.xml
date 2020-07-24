@@ -18,7 +18,7 @@
 
         <activity android:name=".Signup1Activity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".LogoActivity">
+        <activity android:name=".ChartPageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,3 +28,12 @@
     </application>
 
 </manifest>
+
+
+
+
+
+
+
+
+
