@@ -1,7 +1,9 @@
 package com.example.goodbam
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.github.mikephil.charting.components.AxisBase
@@ -27,6 +29,12 @@ class ChartPageActivity : AppCompatActivity() {
         setTemperatureChart()
 
         setHumidityChart()
+
+        chart_btn_back.setOnClickListener {
+            Toast.makeText(this,"아직 미구현",Toast.LENGTH_SHORT).show()
+            var intnet = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 
