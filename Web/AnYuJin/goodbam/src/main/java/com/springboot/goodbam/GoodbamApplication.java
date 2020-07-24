@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GoodbamApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(GoodbamApplication.class, args);
     }
 

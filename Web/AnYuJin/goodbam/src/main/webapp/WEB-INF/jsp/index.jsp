@@ -50,11 +50,11 @@ li:hover{
 .col-sm-9{
 	margin-left: 10px;
 }
- @media ( max-width: 560px ) {
-        .col-sm-2 {
-          width: auto;
-          height:10%;
-        }
+<%-- @media ( max-width: 560px ) {--%>
+<%--        .col-sm-2 {--%>
+<%--          width: auto;--%>
+<%--          height:10%;--%>
+<%--        }--%>
 </style>
 </head>
 <body>
@@ -63,11 +63,11 @@ li:hover{
 	  <div class="container-fluid" id="head">
    		
         <div class="navbar-header">
-          <a href="index.jsp"><img src="/asset/images/logow.PNG" class="navbar-brand" style="width:150px; height: 60px;" ></a>
+          <a href="index.jsp"><img src="/asset/logow.PNG" class="navbar-brand" style="width:150px; height: 60px;" ></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">로그아웃</a></li>
+            <li><a href="/index">로그아웃</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">&nbsp;&nbsp;
@@ -82,8 +82,8 @@ li:hover{
 		<div class="row">
 	        <div class="col-sm-2">
 	          <ul class="side" >
-	            <li><a href="memberList.jsp">회원관리</a></li>
-	            <li><a href="dataTable.jsp">데이터분석</a></li>
+	            <li><a href="memberList">회원관리</a></li>
+	            <li><a href="dataTable">데이터분석</a></li>
 	          </ul>
 	       </div>
         <div class="col-sm-9">
