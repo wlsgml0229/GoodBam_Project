@@ -2,18 +2,25 @@ package com.springboot.goodbam.controller;
 
 
 
+import com.springboot.goodbam.svc.UserService;
+import com.springboot.goodbam.vo.UserVO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 
 @Controller
 public class LoginController {
 
+    @Autowired
+    UserService userService;
     @RequestMapping("/")
     public  String mainPage() throws Exception {
         String page="index";
@@ -43,10 +50,10 @@ public class LoginController {
 
 
     @RequestMapping("/memberList")
-    public  String memberList() throws Exception {
-        String page="memberList";
-
-        return page;
+    public  String memberList(Model model) throws Exception {
+        List<UserVO> list = userService.userList();
+        model.addAttribute("list", list);
+        return "memberList";
     }
 
 

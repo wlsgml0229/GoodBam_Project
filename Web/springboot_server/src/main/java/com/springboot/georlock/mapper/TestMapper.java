@@ -6,5 +6,5 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 public interface TestMapper {
-    public List<Login> getAll() throws Exception;;
+    public List<Login> getAll() throws Exception;
 }

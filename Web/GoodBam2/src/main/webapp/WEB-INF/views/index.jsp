@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,7 +64,7 @@ li:hover{
 	<!-- header -->
  <nav class="navbar">
 	  <div class="container-fluid" id="head">
-   		
+   		<h2>${list.id}</h2> <div>JSP List Test</div> <c:forEach var="list" items="${list}" varStatus="list"> ${list.item}, ${list.content} <br /> </c:forEach>
         <div class="navbar-header">
           <a href="index.jsp"><img src="../../webapp/WEB-INF/images/logow.PNG" class="navbar-brand" style="width:150px; height: 60px;" ></a>
         </div>
