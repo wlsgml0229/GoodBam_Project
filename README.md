@@ -16,7 +16,7 @@
 
 -App
 * Language & tool : kotlin , Android Studio
-* DATABASE : MariaDB
+* DATABASE : MariaDB 10.4
 
 ## 기술
 * FrontEnd: 
