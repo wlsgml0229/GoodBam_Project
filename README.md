@@ -27,6 +27,10 @@
             
 * BackEnd:  AWS EC2 서버 구축 및 RDS 와 EC2 연동
             서버 보안설정
+            안드로이드 실습
+            출처 : https://wickies.tistory.com/100
+            node.js 를 이용한 안드로이드 RDS연결 실습
+            출처 : https://blog.naver.com/zion830/221353306321
             AWS Amplify 를 이용한 안드로이드 앱개발 실습 
             출처 : https://aws.amazon.com/ko/blogs/korea/building-an-android-app-with-aws-amplify-part-1/
             
