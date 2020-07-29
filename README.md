@@ -25,7 +25,8 @@
             관리자 홈페이지에 회원 정보를 띄워주기 위한 테이블작성
             회원 온/습도를 보여주기 위한 기간 설정
             
-* BackEnd: AWS EC2 서버 구축 및 RDS 와 EC2 연동
+* BackEnd:  AWS EC2 서버 구축 및 RDS 와 EC2 연동
+            서버 보안설정
             AWS Amplify 를 이용한 안드로이드 앱개발 실습 
             출처 : https://aws.amazon.com/ko/blogs/korea/building-an-android-app-with-aws-amplify-part-1/
             
