@@ -11,8 +11,7 @@
 ## 개발환경
 -Web
 * SERVER : TOMCAT 11.0
-* DATABASE : MariaDB
-* FrontEnd : Bootstrap, javascript, jQuery, HTML5, CSS3
+* DATABASE : MariaDB 10.4
 * Language & Framework : java, spring boot, mybatis
 
 -App
@@ -21,7 +20,7 @@
 
 ## 기술
 * FrontEnd: 
-
+            
             핸드폰에서도 편리한 확인을 위해 반응형 웹설정
             회원 온/습도를 보여주기 위한 기간 설정
             
@@ -36,7 +35,7 @@
             AWS Amplify 를 이용한 안드로이드 앱개발 실습 
             출처 : https://aws.amazon.com/ko/blogs/korea/building-an-android-app-with-aws-amplify-part-1/
             
-           
+         
             
             
             
